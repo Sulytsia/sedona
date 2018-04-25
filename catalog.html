@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title></title>
+	<title>Sedona Catalog</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	<div class="wrapper">
 	<header class="main-header">
 		<nav class="main-navigation">
-			<a class="main-header-logo">
-				<img src="img/index-logo.svg" width="350" height="200" alt="Логотип седона">
+			<a class="main-header-logo" href="index.html">
+				<img src="img/index-logo.png" width="138" height="70" alt="Логотип седона">
 			</a>
 			<ul class="site-navigation">
 				<li><a href="info.html">Информация</a></li>
@@ -29,16 +33,16 @@
 					<legend>Инфраструктура:</legend>
 					<ul>
 						<li class="filter-option">
-							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="swimming-pool" checked>
-							Бассейн
+							<input id="filter-swimming-pool" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="swimming-pool" checked>
+							<label for="filter-swimming-pool">Бассейн</label>
 						</li>
 						<li class="filter-option">
-							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking">
-							Парковка
+							<input id="filter-parking" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking">
+							<label for="filter-parking">Парковка</label> 
 						</li>
 						<li class="filter-option">
-							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wi-fi">
-							Wi-Fi
+							<input id="filter-wi-fi" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wi-fi">
+							<label for="filter-wi-fi">Wi-Fi</label>
 						</li>
 					</ul>
 				</fieldset>
@@ -46,16 +50,16 @@
 					<legend>Тип жилья:</legend>
 					<ul>
 						<li class="filter-option">
-							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" checked>
-							Гостиница
+							<input id="filter-hotel" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" checked>
+							<label for="filter-hotel">Гостиница</label>
 						</li>
 						<li class="filter-option">
-							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" checked>
-							Мотель
+							<input id="filter-motel" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" checked>
+							<label for="filter-motel">Мотель</label>
 						</li>
 						<li class="filter-option">
-							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="swimming-pool" checked>
-							Апартаменты
+							<input id="filter-apartments" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments" checked>
+							<label for="filter-apartments">Апартаменты</label>
 						</li>
 					</ul>
 				</fieldset>
@@ -65,19 +69,19 @@
 					<b>До 3000</b>
 					<input class="visually-hidden" type="range" min="0" max="3000" step="100" value="2000">
 				</fieldset>
-				<button type="submit" class="filter-button button">Показать</button>
+				<button class="filter-button button" type="submit">Показать</button>
 			</form>
 		</section>
 
-		<div class="sorting-filters">
+		<section class="sorting-filters">
 			<p>
 				<span>Найдено: 3</span>
 				<span>Сортировка:</span>
-				<a class="link" href="#">По цене</a>
-				<a class="link" href="#">По типу</a>
-				<a class="link" href="#">По рейтингу</a>
+				<a class="sorting-button" href="#">По цене</a>
+				<a class="sorting-button" href="#">По типу</a>
+				<a class="sorting-button" href="#">По рейтингу</a>
 			</p>	
-		</div>
+		</section>
 
 		<section class="hotels">
 			<h2 class="visually-hidden">Список гостиниц</h2>
@@ -87,37 +91,38 @@
 					<p>Гостиница от 4000 Р.</p>
 					<p class="hotels-image">
 						<a href="#">
-							<img src="img/product-1.jpg"	width="200"	height="150" alt="Гостиница Amara Resort">
+							<img src="img/amara.png" width="135" height="90" alt="Гостиница Amara Resort">
 						</a>
 					</p>
-					<a class="button" href="#">Подробнее</a>
-					<a class="button" href="#">Забронировать</a>
+					<button class="hotels-button-details" type="submit">Подробнее</button>
+					<button class="hotels-button-book-it" type="submit">Забронировать</button>
 				</li>
 				<li class="hotels-item">
 					<h3>Desert Quail Inn</h3>
 					<p>Мотель от 3000 Р.</p>
 					<p class="hotels-image">
 						<a href="#">
-							<img src="img/product-2.jpg"	width="200"	height="150" alt="Мотель Desert Quail Inn">
+							<img src="img/desert.png" width="135" height="90" alt="Мотель Desert Quail Inn">
 						</a>
 					</p>
-					<a class="button" href="#">Подробнее</a>
-					<a class="button" href="#">Забронировать</a>
+					<button class="hotels-button-details" type="submit">Подробнее</button>
+					<button class="hotels-button-book-it" type="submit">Забронировать</button>
 				</li>
 				<li class="hotels-item">
 					<h3>Villas at Poco Diablo</h3>
 					<p>Апартаменты от 2000 Р.</p>
 					<p class="hotels-image">
 						<a href="#">
-							<img src="img/product-3.jpg"	width="200"	height="150" alt="Апартаменты Villas at Poco Diablo">
+							<img src="img/villas.png" width="135" height="90" alt="Апартаменты Villas at Poco Diablo">
 						</a>
 					</p>
-					<a class="button" href="#">Подробнее</a>
-					<a class="button" href="#">Забронировать</a>
+					<button class="hotels-button-details" type="submit">Подробнее</button>
+					<button class="hotels-button-book-it" type="submit">Забронировать</button>
 				</li>
 			</ul>
 		</section>
 	</main>
+
 	<footer class="main-footer">
 		<p>#VISITSEDONA</p>
 		<div class="footer-social">
@@ -128,10 +133,11 @@
 			</ul>
 		</div>
 		<p class="footer-copyright">
-     	<a href="https://visitsedona.com/" class="footer-logo">
-     		<img src="img/footer-logo.svg" alt="footer-logo">
+     	<a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-logo">
+     		<img src="img/logo_name.jpg" width="115" height="41" alt="footer-logo">
      	</a>
     </p>
 	</footer>
+	</div>
 </body>
 </html>
