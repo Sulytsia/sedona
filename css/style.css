@@ -22,6 +22,8 @@ body {
 	line-height: 21px;
 	font-weight: 400;
 	color: #333333;
+	background: #f2f2f2;
+	box-shadow: 10px 10px 10px 10px grey;
 	text-transform: uppercase;
 }
 
@@ -30,6 +32,7 @@ body {
 	max-width: 1200px;
 	height: auto;
 	margin: 0 auto;
+	box-shadow: 0px 5px 15px 0px grey;
 }
 
 a {
@@ -308,6 +311,10 @@ a {
 	margin-top: 20px;
 }
 
+.modal-apartments {
+	background: #fff;
+}
+
 .btn {
 	display: inline-block;
 	border: 0;
@@ -321,6 +328,11 @@ a {
 	text-transform: uppercase;
 }
 
+.search-open-btn {
+	position: relative;
+	width: 100%;
+	z-index: 2;
+}
 
 .search-info {
 	width: 460px;
@@ -337,6 +349,7 @@ a {
 
 .search-map-wrapper {
 	margin-top: 55px;
+	overflow: hidden;
 }
 
 .search-form-wrapper {
@@ -356,13 +369,92 @@ a {
 	width: 100%
 }
 
+.button-apartments-sedona:hover {
+	background-color: #604e43;
+}
+
+.button-apartments-sedona:active {
+	background-color: #503e33;
+	color: #928a85;
+}
+
 .apartments-form {
 	position: absolute;
 	padding: 55px;
 	line-height: 26px;
 	font-weight: 700;
-	
+	z-index: 1;
 	background-color: #fff;
+}
+
+.apartments-form-hide {
+  -webkit-animation: formhide 0.7s forwards;
+          animation: formhide 0.7s forwards;
+}
+
+.apartments-form-show {
+  -webkit-animation: formshow 0.7s forwards;
+          animation: formshow 0.7s forwards;
+}
+
+@-webkit-keyframes formshow {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes formshow {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes formhide {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+}
+
+@keyframes formhide {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
 }
 
 .search-form-row {
@@ -375,7 +467,7 @@ a {
 }
 
 .search-form-label {
-	padding-right: 6px 15px 6px 0;
+	padding: 6px 15px 6px 0;
 	width: 112px;
 }
 
@@ -396,6 +488,15 @@ a {
 	border: 0;
 	height: 38px;
 	background-color: #f2f2f2;
+	width: 100%;
+}
+
+.search-form-input:hover {
+	background-color: #ebebeb;
+}
+
+.search-form-input:focus {
+	background-color: #fff;
 }
 
 .search-form-input-wrapper-calendar
@@ -413,11 +514,33 @@ a {
 	background-color: transparent;
 }
 
+.search-form-calendar-icon {
+	fill: #cacaca;
+}
+
+.search-form-calendar-button:hover .search-form-calendar-icon {
+	fill: #000;
+}
+
+.search-form-calendar-button:active .search-form-calendar-icon {
+	fill: #81b3d2;
+}
+
 .search-form-submit {
 	width: 100%;
 	font-size: 21px;
 	padding: 20px 198px;
 	margin-top: 55px;
+	border: 0;
+}
+
+.search-form-submit:hover {
+	background-color: #669ec0;
+}
+
+.search-form-submit:active {
+	background-color: #5496bd;
+	color: #8cb4cf;
 }
 
 .search-form-row-columns {
@@ -508,7 +631,7 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.8);
 }
 
 .hashtag {
@@ -516,6 +639,10 @@ a {
 	line-height: 26px;
 	font-weight: 700;
 	color: #000;
+}
+
+.hashtag:hover {
+	color: #81b3d2;
 }
 
 .social {
@@ -569,6 +696,19 @@ a {
 	background: url(../svg-sedona/youtube.svg) no-repeat center;
 }
 
+.social-button:hover {
+	background-color: #669ec0;
+}
+
+.social-button:active {
+	background-color: #5496bd;
+}
+
+.social-button:active::before {
+	background-color: #5496bd;
+	opacity: 0.3;
+}
+
 .developer {
 	display: flex;
 	align-items: center;
@@ -579,12 +719,28 @@ a {
 .developer-text {
 	display: block;
 	margin-right: 6px;
+	color: #000;
 }
 
 .developer-logo-link{
 	display: block;
 	width: 115px;
 	height: 41px;
+}
+
+.developer-logo {
+  width: 115px;
+  height: 41px;
+  fill: #231f20;
+}
+
+.developer-logo:hover,
+.developer-logo-link:focus .developer-logo {
+	fill: #81b3d2;
+}
+
+.developer-logo:active {
+  fill: #bdbbbc;
 }
 
 .filters {
