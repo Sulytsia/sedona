@@ -1,11 +1,11 @@
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 *, *:before, *:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+	-webkit-box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 *{
@@ -46,17 +46,17 @@ a {
 
 .visually-hidden:not(:focus):not(:active),
 .filters__checkbox {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	-webkit-clip-path: inset(100%);
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 
 .logo {
@@ -117,8 +117,8 @@ a {
 
 .main-nav-item-link {
 	line-height: 26px;
-  font-weight: 700;
-  color: #333;
+	font-weight: 700;
+	color: #333;
 }
 
 .main-nav-item--left-side+.main-nav-item--right-side {
@@ -193,9 +193,9 @@ a {
 	width: 33.3%;
 	
 	padding-right: 46px;
-  padding-top: 23px;
-  padding-left: 61px;
-  padding-bottom: 3px;
+	padding-top: 23px;
+	padding-left: 61px;
+	padding-bottom: 3px;
 	
 	text-align: center;
 	background-color: #81b3d2;
@@ -220,9 +220,9 @@ a {
 	text-align: center;
 	
 	padding-top: 159px;
-  padding-bottom: 80px;
-  padding-right: 59px;
-  padding-left: 55px;
+	padding-bottom: 80px;
+	padding-right: 59px;
+	padding-left: 55px;
 }
 
 .features-item-first::before {
@@ -235,7 +235,7 @@ a {
 	width: 75px;
 	height: 72px;  	
 	top: 50px;
-  left: 160px;
+	left: 160px;
 	
 	background-image: url(../svg-sedona/icon-1.svg);
 }
@@ -273,8 +273,8 @@ a {
 	text-align: center;
 	
 	padding-top: 24px;
-  padding-right: 52px;
-  padding-left: 38px;
+	padding-right: 52px;
+	padding-left: 38px;
 	
 	background-color: #81b3d2;
 
@@ -296,8 +296,8 @@ a {
 	
 	padding-top: 41px;
 	padding-bottom: 50px;
-  padding-right: 45px;
-  padding-left: 54px;
+	padding-right: 45px;
+	padding-left: 54px;
 	
 	text-align: center;
 }
@@ -388,73 +388,73 @@ a {
 }
 
 .apartments-form-hide {
-  -webkit-animation: formhide 0.7s forwards;
-          animation: formhide 0.7s forwards;
+	-webkit-animation: formhide 0.7s forwards;
+	animation: formhide 0.7s forwards;
 }
 
 .apartments-form-show {
-  -webkit-animation: formshow 0.7s forwards;
-          animation: formshow 0.7s forwards;
+	-webkit-animation: formshow 0.7s forwards;
+	animation: formshow 0.7s forwards;
 }
 
 @-webkit-keyframes formshow {
-  0% {
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
-    opacity: 0;
-  }
+	0% {
+		-webkit-transform: translateY(-100%);
+		transform: translateY(-100%);
+		opacity: 0;
+	}
 
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-  }
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+		opacity: 1;
+	}
 }
 
 @keyframes formshow {
-  0% {
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
-    opacity: 0;
-  }
+	0% {
+		-webkit-transform: translateY(-100%);
+		transform: translateY(-100%);
+		opacity: 0;
+	}
 
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-  }
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+		opacity: 1;
+	}
 }
 
 @-webkit-keyframes formhide {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
+	0% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
 
-  100% {
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    -webkit-transform-origin: top;
-            transform-origin: top;
-  }
+	100% {
+		-webkit-transform: translateY(-100%);
+		transform: translateY(-100%);
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		-webkit-transform-origin: top;
+		transform-origin: top;
+	}
 }
 
 @keyframes formhide {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
+	0% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
 
-  100% {
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    -webkit-transform-origin: top;
-            transform-origin: top;
-  }
+	100% {
+		-webkit-transform: translateY(-100%);
+		transform: translateY(-100%);
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		-webkit-transform-origin: top;
+		transform-origin: top;
+	}
 }
 
 .search-form-row {
@@ -572,24 +572,24 @@ a {
 
 .search-form-input-control-plus::after {
 	content: "";
-  position: absolute;
-  top: 14px;
-  left: 17px;
-  width: 3px;
-  height: 11px;
-  border-radius: 1px;
-  background-color: #a9a9a9;
+	position: absolute;
+	top: 14px;
+	left: 17px;
+	width: 3px;
+	height: 11px;
+	border-radius: 1px;
+	background-color: #a9a9a9;
 }
 
 .search-form-input-control-plus::before {
 	content: "";
-  position: absolute;
-  top: 18px;
-  left: 13px;
-  width: 11px;
-  height: 3px;
-  border-radius: 1px;
-  background-color: #a9a9a9;
+	position: absolute;
+	top: 18px;
+	left: 13px;
+	width: 11px;
+	height: 3px;
+	border-radius: 1px;
+	background-color: #a9a9a9;
 }
 
 #map {
@@ -626,12 +626,12 @@ a {
 }
 
 .main-footer-index {
-  position: absolute;
-  text-align: center;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(255, 255, 255, 0.8);
+	position: absolute;
+	text-align: center;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(255, 255, 255, 0.8);
 }
 
 .hashtag {
@@ -729,9 +729,9 @@ a {
 }
 
 .developer-logo {
-  width: 115px;
-  height: 41px;
-  fill: #231f20;
+	width: 115px;
+	height: 41px;
+	fill: #231f20;
 }
 
 .developer-logo:hover,
@@ -740,90 +740,5 @@ a {
 }
 
 .developer-logo:active {
-  fill: #bdbbbc;
+	fill: #bdbbbc;
 }
-
-.filters {
-	background-image: url(../img/filter-bg.png);
-}
-
-legend {
-	font-size: 16px;
-	font-weight: 700;
-	color: #ffffff;
-}
-
-.filter-option,
-.hotels-item {
-	list-style: none;
-}
-
-.filter-option label {
-	color: #ffffff;
-}
-
-.filter-button {
-	background-color: transparent;
-	color: #ffffff;
-}
-
-.filter-button:hover {
-	background-color: #ffffff;
-	color: #000000;
-}
-
-.sorting-filters span {
-	font-size: 26px;
-	line-height: 26px;
-	font-weight: 700;
-}
-
-.sorting-button {
-	font-size: 12px;
-	line-height: 18px;
-	color: #81b3d2;
-}
-
-.hotels h3 {
-	font-size: 21px;
-	line-height: 26px;
-	font-weight: 700;
-}
-
-.hotels-button-details {
-	font-weight: 700;
-	background-color: #81b3d2;
-	color: #ffffff;
-}
-
-.hotels-button-details:hover {
-	background-color: #669ec0;
-}
-
-.hotels-button-details:active {
-	background-color: #5496bd;
-	color: #7fadcb;
-}
-
-.hotels-button-book-it {
-	font-weight: 700;
-	background-color: #766357;
-	color: #ffffff;
-}
-
-.hotels-button-book-it:hover {
-	background-color: #604e43;
-}
-
-.hotels-button-book-it:active {
-	background-color: #827872;
-}
-
-.hotels-item h3:hover {
-	color: #81b3d2;
-}
-
-.hotels-item h3:active {
-	color: #d0d0d0;
-}
-
