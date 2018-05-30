@@ -2,7 +2,7 @@
 <html lang="ru">
 <head> 
 	<meta charset="UTF-8">
-	<title>Sedona</title>
+	<title>Sedona Catalog</title>
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -25,7 +25,7 @@
 						<a class="main-nav-item-link" href="map.html">Карта штата</a>
 					</li>
 					<li class="main-navigation-item  main-nav-item--right-side">
-						<a class="main-nav-item-link" href="hotels.html">Гостиницы</a>
+						<a class="main-nav-item-link  main-nav-item-current">Гостиницы</a>
 					</li>
 				</ul>
 			</nav>
@@ -37,7 +37,7 @@
 					<div class="filters-layout">
 						<div class="filters-option">
 							<fieldset class="filters-fieldset">
-								<legend class="filters-legend">Инфрастрктура</legend>
+								<legend class="filters-legend">Инфраструктура:</legend>
 								<ul class="filters-list">
 									<li class="filters-item">
 										<input class="filters-checkbox" type="checkbox" name="pool" id="pool" checked>
@@ -52,30 +52,30 @@
 										<label class="filters-checkbox-label" for="wi-fi">WI-FI</label>
 									</li>
 								</ul>
-							</fieldset>
+							</fieldset> 
 						</div>
 						<div class="filters-option">
 							<fieldset class="filters-fieldset">
 								<legend class="filters-legend">Тип жилья:</legend>
-								<ul>
+								<ul class="filters-list">
 									<li class="filters-item">
 										<input class="filters-checkbox" type="checkbox" name="hotel" id="hotel" checked>
 										<label class="filters-checkbox-label" for="hotel">Гостиница</label>
 									</li>
 									<li class="filters-item">
 										<input class="filters-checkbox" type="checkbox" name="motel" id="motel" checked>
-										<label for="motel">Мотель</label>
+										<label class="filters-checkbox-label" for="motel">Мотель</label>
 									</li>
 									<li class="filters-item">
 										<input class="filters-checkbox" type="checkbox" name="apartments" id="apartments" checked>
-										<label for="apartments">Апартаменты</label>
+										<label class="filters-checkbox-label" for="apartments">Апартаменты</label>
 									</li>
 								</ul>
 							</fieldset>
 						</div>
 						<div class="filters-price">
 							<fieldset class="filters-price-fieldset">
-								<legend class="filters-price-legend">Стоимость в сутки:</legend>
+								<legend class="filters-price-legend">Стоимость в сутки (p):</legend>
 								<div class="filters-price-inputs">
 									<label class="filters-price-label  filters-price-label-min">
 										От
@@ -113,13 +113,13 @@
 								Сортировка:
 							</li>
 							<li class="hotels-sort-item">
-								<a href="#" class="hotels-sort-link  hotels-sort-link-active"></a>
+								<a href="#" class="hotels-sort-link  hotels-sort-link-active">По цене</a>
 							</li>
 							<li class="hotels-sort-item">
-								<a href="#" class="hotels-sort-link"></a>
+								<a href="#" class="hotels-sort-link">По типу</a>
 							</li>
 							<li class="hotels-sort-item">
-								<a href="#" class="hotels-sort-link"></a>
+								<a href="#" class="hotels-sort-link">По рейтингу</a>
 							</li>
 						</ul>
 					</div>
@@ -129,7 +129,7 @@
 								<a href="#" class="hotels-updown-sort-link  hotels-updown-sort-link-up">По возрастанию</a>
 							</li>
 							<li class="hotels-updown-sort-item">
-								<a href="#" class="hotels-updown-sort-link  hotels-updown-sort-link-down">По убыванию</a>
+								<a href="#" class="hotels-updown-sort-link  hotels-updown-sort-link-down  hotels-updown-sort-link-active">По убыванию</a>
 							</li>
 						</ul>
 					</div>
@@ -141,14 +141,14 @@
 							<img src="img/amara.png" alt="Amara Resort and Spa">
 						</div>
 						<div class="hotels-item-desc">
-							<a href="#" class="hotels-item-name">Amara Resort and Spa</a>
+							<a href="#" class="hotels-item-name">Amara Resort & Spa</a>
 							<div class="hotels-item-info">
 								<div class="hotels-item-type">Гостиница</div>
 								<div class="hotels-item-price">От 4000 р.</div>
 							</div>
 							<div class="hotels-item-links">
-								<a href="#" class="hotels-mote-info  btn">Подробнее</a>
-								<a href="#" class="hotels-info book  btn  btn-action">Забронировать</a>
+								<a href="#" class="hotels-more-info  btn-hotels">Подробнее</a>
+								<a href="#" class="hotels-info-book  btn-hotels  btn-action">Забронировать</a>
 							</div>
 						</div>
 						<div class="hotels-item-rating">
@@ -172,8 +172,8 @@
 								<div class="hotels-item-price">От 3000 р.</div>
 							</div>
 							<div class="hotels-item-links">
-								<a href="#" class="hotels-mote-info  btn">Подробнее</a>
-								<a href="#" class="hotels-info book  btn  btn-action">Забронировать</a>
+								<a href="#" class="hotels-more-info  btn-hotels">Подробнее</a>
+								<a href="#" class="hotels-info-book  btn-hotels  btn-action">Забронировать</a>
 							</div>
 						</div>
 						<div class="hotels-item-rating">
@@ -196,8 +196,8 @@
 								<div class="hotels-item-price">От 2000 р.</div>
 							</div>
 							<div class="hotels-item-links">
-								<a href="#" class="hotels-mote-info  btn">Подробнее</a>
-								<a href="#" class="hotels-info book  btn  btn-action">Забронировать</a>
+								<a href="#" class="hotels-more-info  btn-hotels">Подробнее</a>
+								<a href="#" class="hotels-info-book  btn-hotels  btn-action">Забронировать</a>
 							</div>
 						</div>
 						<div class="hotels-item-rating">
@@ -240,7 +240,6 @@
 				</div>
 			</footer>
 		</div>
-	</div>
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvwdzE1D3hajv5u6owZiqcZJR6BLlUpRc&callback=initMap">
 	</script>
 	<script async defer src="js/map.js"></script>
